@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 768px)" href="css/tinyScreen.css" />  <!--屏幕小于400px时 加载tinyScreen。css-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-device-width: 992px)" href="css/smallScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px) and (max-device-width: 1200px)" href="css/middleScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1200px)"href="css/bigScreen.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/form-comfire.js"></script>
+</head>
+<body class="gray-bg">
+<div class="mianNav-wrap">
+    <div class="mainConBox main-navBox ">
+        <!--大屏状态下-->
+        <nav class="navbar  hidden-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand " href="#"  >首页</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">查找图书</a></li>
+                    <li><a href="#">最新上架</a></li>
+                    <li><a href="#">会员中心</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">需求登记</a></li>
+                    <li><a href="#">购物车</a></li>
+                    <li><a href="#">充值(余额)</a></li>
+                    <li><a href="javascript:void(0)">退出</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--小屏状态下-->
+        <nav class="navbar visible-xs navbar-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="right-button">
+                        <button type="button"  class=" btn-menu  navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="menu-right"></span>
+                        </button>
+                    </div>
+                    <a class="navbar-brand" href="#" >首页</a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">查找图书</a></li>
+                        <li><a href="#">最新上架</a></li>
+                        <li><a href="#">会员中心</a></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">需求登记</a></li>
+                        <li><a href="#">购物车</a></li>
+                        <li><a href="#">充值(余额)</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class=" mainConBox " style="position: relative;">
+    <div class="margin-header visible-xs"></div>
+    <div class="main-content-box margin-sm" >
+        <div class="main-conten-top margin-bot">
+            <h2 class="lg-header" style="font-weight: normal">会员中心</h2>
+            <div class="menu-sub-icon visible-xs"></div>
+        </div>
+       <div class="slidenavBox col-padding-no marginlr-xs">
+           <div class="row">
+               <div class="col-sm-3 col-md-2 subnav-left">
+                   <div class="nav nav-stacked " >
+                        <div class="type">
+                            <div class="title ">订单中心</div>
+                            <ul>
+                                <li class="list-l subtitle "><a href="/008-vip-center-dingdan.html">我的订单</a> </li>
+                            </ul>
+                        </div>
+                       <div class="type">
+                           <div class="title cur">分销中心</div>
+                           <ul>
+                               <li class="list-l subtitle cur"><a href="/008-vip-center-yj.html"> 我的佣金</a></li>
+                               <li class="list-l subtitle"><a href="/008-vip-center-yjcash.html"> 佣金提现</a></li>
+                               <li class="list-l subtitle"><a href="/008-vip-center-team.html"> 我的团队</a></li>
+                               <li class="list-l subtitle"><a href="/008-vip-center-code.html"> 推广二维码</a></li>
+                           </ul>
+                       </div>
+                       <div class="type">
+                           <div class="title">资产中心</div>
+                           <ul>
+                               <li class="list-l subtitle"><a href="/008-vip-center-balance.html">账户余额</a></li>
+                               <li class="list-l subtitle"><a href="/008-vip-center-discount.html">优惠券</a></li>
+                           </ul>
+                       </div>
+                       <div class="type">
+                           <div class="title">个人设置</div>
+                           <ul>
+                               <li class="list-l subtitle" ><a href="/008-vip-center-message.html">基本信息</a></li>
+                               <li class="list-l subtitle" ><a href="/008-vip-center-password.html">修改密码</a></li>
+                               <li class="list-l subtitle" ><a href="/008-vip-center-email.html">收货邮箱</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-sm-9 col-md-10  subnav-right ">
+                   <div class="item">
+                       <div class="vipcenter-bg margin-bot hd hidden-xs"><strong><span>我的佣金：</span><span class="orange">￥89.36</span><a href="#" class="yj-btn " > <button class="btn green-bg2">充值余额</button> </a><a href="#" class="yj-btn "  > <button class="btn red-bg2">佣金提现</button> </a></strong></div>
+                       <div class="vipcenter-bg margin-bot hd visible-xs"><strong><span>我的佣金：</span><span class="orange">￥89.36</span><p class="yj-btn"><a href="#" class="fl " > <button class="btn green-bg2">充值余额</button> </a><a href="#" class=" fl"  > <button class="btn red-bg2 fl">佣金提现</button> </a></p></strong></div>
+                       <div class="vipcenter-bg subnav-con subnav-con-bg-fff">
+                           <div class="top navToggle-title"><span  class="list-l cur">全部充值</span><span class="list-l">待充值</span><span class="list-l">已完成</span></div>
+                           <div class=" bottom margin-bot">
+                               <div class=" mar-tb">
+                                   <div class="table-th gray-bg mar-tb">
+                                       <table class="" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                           <colgroup>
+                                               <col width="28%">
+                                               <col width="25%">
+                                               <col width="25%">
+                                               <col >
+                                           </colgroup>
+                                           <tr>
+                                               <th class="table-select ">
+                                                   <select>
+                                                       <option class="list-l " selected="selected" value="true">近三个月充值</option>
+                                                       <option class="list-l ">近三个月充值</option>
+                                                       <option class="list-l ">近三个月充值</option>
+                                                   </select>
+                                               </th>
+                                               <th>充值金额</th>
+                                               <th class="table-select ">
+                                                   <select>
+                                                       <option class="list-l " selected="selected" value="true">充值方式</option>
+                                                       <option class="list-l ">支付宝</option>
+                                                       <option class="list-l ">微信</option>
+                                                       <option class="list-l ">美亚卡</option>
+                                                   </select>
+                                               </th>
+                                               <th class="table-select ">
+                                                   <select>
+                                                       <option class="list-l " selected="selected" value="true">全部状态</option>
+                                                       <option class="list-l ">待发货</option>
+                                                       <option class="list-l ">已完成</option>
+                                                   </select>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </div>
+                                   <div class="sub-right-toggle-con navToggle-con">
+                                       <div class="item item1">
+                                           <table class="table table-striped" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                               <colgroup>
+                                                   <col width="28%">
+                                                   <col width="25%">
+                                                   <col width="23%" class="visible-xs">
+                                                   <col width="25%" class="hidden-xs">
+                                                   <col width="">
+                                               </colgroup>
+                                               <tbody>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               </tbody>
+                                           </table>
+                                           <div class="lines-box-l margin-bot"></div>
+                                           <div class="pageBox pull-right">
+                                               <a href="javascript:viod(0)"><span class="page-icon icon-prev"></span></a>
+                                        <span class="page-num">
+                                            <a href="javascript:viod(0)" class="cur">1</a><a href="javascript:viod(0)">2</a> <a href="javascript:viod(0)">3</a><a href="javascript:viod(0)">...</a> <a href="javascript:viod(0)">50</a>
+                                        </span>
+                                               <a href="javascript:viod(0)"><span class="page-icon icon-next"></span></a>
+                                           </div>
+                                       </div>
+                                       <div class="item item2">
+                                           <table class="table table-striped" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                               <colgroup>
+                                                   <col width="28%">
+                                                   <col width="25%">
+                                                   <col width="23%" class="visible-xs">
+                                                   <col width="25%" class="hidden-xs">
+                                                   <col width="">
+                                               </colgroup>
+                                               <tbody>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$17.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               </tbody>
+                                           </table>
+                                           <div class="lines-box-l margin-bot"></div>
+                                           <div class="pageBox pull-right">
+                                               <a href="javascript:viod(0)"><span class="page-icon icon-prev"></span></a>
+                                        <span class="page-num">
+                                            <a href="javascript:viod(0)" class="cur">1</a><a href="javascript:viod(0)">2</a> <a href="javascript:viod(0)">3</a><a href="javascript:viod(0)">...</a> <a href="javascript:viod(0)">50</a>
+                                        </span>
+                                               <a href="javascript:viod(0)"><span class="page-icon icon-next"></span></a>
+                                           </div>
+                                       </div>
+                                       <div class="item item3">
+                                           <table class="table table-striped" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                               <colgroup>
+                                                   <col width="28%">
+                                                   <col width="25%">
+                                                   <col width="23%" class="visible-xs">
+                                                   <col width="25%" class="hidden-xs">
+                                                   <col width="">
+                                               </colgroup>
+                                               <tbody>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$19.00</td>
+                                                   <td>微信</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>2017-04-16 10:09</td>
+                                                   <td>$10.00</td>
+                                                   <td>支付宝</td>
+                                                   <td>已完成</td>
+                                               </tr>
+                                               </tbody>
+                                           </table>
+                                           <div class="lines-box-l margin-bot"></div>
+                                           <div class="pageBox pull-right">
+                                               <a href="javascript:viod(0)"><span class="page-icon icon-prev"></span></a>
+                                        <span class="page-num">
+                                            <a href="javascript:viod(0)" class="cur">1</a><a href="javascript:viod(0)">2</a> <a href="javascript:viod(0)">3</a><a href="javascript:viod(0)">...</a> <a href="javascript:viod(0)">50</a>
+                                        </span>
+                                               <a href="javascript:viod(0)"><span class="page-icon icon-next"></span></a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       </div>
+    </div>
+</div>
+
+<div class="footerBox mainConBox">
+    <p>已登录账号:<span >12345ffg@gmail.com</span></p>
+</div>
+<div class="backTop-box">
+    <div class="backToTop"></div>
+</div>
+</body>
+</html>

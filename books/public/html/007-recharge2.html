@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 768px)" href="css/tinyScreen.css" />  <!--屏幕小于400px时 加载tinyScreen。css-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-device-width: 992px)" href="css/smallScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px) and (max-device-width: 1200px)" href="css/middleScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1200px)"href="css/bigScreen.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="mianNav-wrap">
+    <div class="mainConBox main-navBox ">
+        <!--大屏状态下-->
+        <nav class="navbar  hidden-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand " href="#"  >首页</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">查找图书</a></li>
+                    <li><a href="#">最新上架</a></li>
+                    <li><a href="#">会员中心</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">需求登记</a></li>
+                    <li><a href="#">购物车</a></li>
+                    <li><a href="#">充值(余额)</a></li>
+                    <li><a href="javascript:void(0)">退出</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--小屏状态下-->
+        <nav class="navbar visible-xs navbar-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="right-button">
+                        <button type="button"  class=" btn-menu  navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="menu-right"></span>
+                        </button>
+                    </div>
+                    <a class="navbar-brand" href="#" >首页</a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">查找图书</a></li>
+                        <li><a href="#">最新上架</a></li>
+                        <li><a href="#">会员中心</a></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">需求登记</a></li>
+                        <li><a href="#">购物车</a></li>
+                        <li><a href="#">充值(余额)</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class=" mainConBox">
+    <div class="margin-header visible-xs"></div>
+    <div class="main-content-box margin-sm">
+        <div class="text-well-box">
+            <div class="well marginlr-xs well-bg-green"><strong>如果你以前没有充值过，那么我们建议先少量充值，如1美元</strong></div>
+            <div class="well marginlr-xs well-bg-yellow">
+                <p>
+                    <span>只有$美元计价的AMAZON.COM礼品代码能在本站充值！</span>
+                    <span>amazon.co.uk，amazon.ca，amazon.in，amazon.it，amazon.de，amazon.fr，amazon.es等（£或€等）不被接受...</span>
+                </p>
+                <p><a href="javascript:void (0);">您不需要人在美国，可以从amazon.com购买礼品卡</a>，或者以当地货币在替代选项购买amazon.com礼品卡。</p>
+            </div>
+            <div class="well marginlr-xs red well-bg-orange">不要自己兑换amazon.com礼品码！</div>
+        </div>
+        <div class="lines-box-l margin-bot"></div>
+        <div class="col-padding-sm marginlr-xs">
+            <!--大屏模式-->
+                <div class="row hidden-xs">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="need-register-box marginlr-xs text-section-con">
+                            <div class="text-section2">
+                                <p><strong>步骤1.</strong>使用以下任何一种付款方式，以$ USD（您希望充值的金额）为自己购买一个amazon.com礼品代码：</p>
+                                <p>•<a href="#"> 用信用卡/借记卡在amazon.com购买</a>，发送代码到您自己的电子邮件地址</p>
+                            </div>
+                            <a href="#" class="jc"><button type="button" class="btn btn-orange blue-bg w-czk margin-bot" >教程：如果使用amazon.com礼品卡充值</button></a>
+                            <div class="text-section2">
+                                <p><strong>替代方式:</strong></p>
+                                <p>• 在美国几乎每个零售/药店都可以<a href="#">现金购买</a></p>
+                                <p>• 在美国的任何Coinstar信息亭用<a href="#">现金购买</a></p>
+                                <p>• 在giftcardsy.com上用<a href="#">PayPal</a></p>
+                                <p>• 在 amzcode.nl<a href="#">用Skrill，Paysafecard，iDeal，Paypal 购买</a></p>
+                                <p>• 在中东和北非用<a href="#">CashU</a></p>
+                                <p>• 在premium2me.com<a href="#">用Egopay，Perfect Money，Onecard，Dixiepay，OkPay购买 </a></p>
+                                <p>• 在<a href="#">plati.ru </a>网站购买</p>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="need-register-box marginlr-xs text-section-con">
+                            <div class="text-section2 ">
+                                <p><strong>步骤2.</strong>输入您的amazon.com- giftcode，同时注明此礼品卡的金额</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail gray-bg ymx-cz-search">
+                            <div class="marginlr-xs ">
+                                <div class="">
+                                    <form class="form-inline" role="form">
+                                        <div class="form-list left fl">amazon.com礼品卡代码</div>
+                                        <div class="form-list form-group fl">
+                                            <label class="sr-only" >名称</label>
+                                            <input type="text" class="form-control"  placeholder="XXXX-YYYYYY-ZZZZ">
+                                        </div>
+                                        <div class="form-list fr">
+                                            <label class="form-select-left" style="padding:6px 8px;">$</label>
+                                            <select class="form-control">
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-green fr margin-bot">提交充值</button>
+                            <p class="clear-both"><strong >注意：</strong>我们不接受分数。如果礼品卡的全部价值为10.50美元，那么您将需要输入10.00到上述表格，您将被记入$ 10.00。<br/>
+                                <span style="padding:5px 0;display: inline-block;"> 如果您有任何问题，请<a href="012-service.html" style="color:#017cfa;">联系支持</a></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <!--小屏模式-->
+            <div class="row visible-xs col-padding-no">
+                <div class="col-xs-12 ">
+                    <div class="need-register-box marginlr-xs text-section-con">
+                        <div class="text-section2">
+                            <p><strong>步骤1.</strong>使用以下任何一种付款方式，以$ USD（您希望充值的金额）为自己购买一个amazon.com礼品代码：</p>
+                            <p>•<a href="#"> 用信用卡/借记卡在amazon.com购买</a>，发送代码到您自己的电子邮件地址</p>
+                            <p><strong>步骤2.</strong>输入您的amazon.com- giftcode，同时注明此礼品卡的金额</p>
+                        </div>
+                        <a href="#" class="jc"><button type="button" class="btn btn-orange blue-bg w-czk margin-bot" >教程：如果使用amazon.com礼品卡充值</button></a>
+                        <div class="thumbnail gray-bg ymx-cz-search" style="padding:4px 2px;">
+                            <div >
+                                    <form class="form-inline" role="form">
+                                        <div class="form-list left fl">amazon.com礼品卡代码</div>
+                                        <div class="form-list form-group fl">
+                                            <label class="sr-only">名称</label>
+                                            <input type="text" class="form-control"  placeholder="XXXX-YYYYYY-ZZZZ">
+                                        </div>
+                                        <div class="form-list fl" style="width:100%;" >
+                                            <label class="form-select-left" style="padding:6px 8px;">$</label>
+                                            <select class="form-control"  style="float: left;width: 80%">
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                                <option>10.00</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            <button type="button" class="btn btn-green w-czk fr margin-bot">提交充值</button>
+                            <p class="clear-both" ><strong >注意：</strong>我们不接受分数。如果礼品卡的全部价值为10.50美元，那么您将需要输入10.00到上述表格，您将被记入$ 10.00。<br>
+                               <span style="padding:5px 0;display: inline-block;"> 如果您有任何问题，请<a href="012-service.html" style="color:#017cfa;">联系支持</a></span>
+                            </p>
+                        </div>
+                        <div class="text-section2">
+                            <p><strong>替代方式:</strong></p>
+                            <p>• 在美国几乎每个零售/药店都可以<a href="#">现金购买</a></p>
+                            <p>• 在美国的任何Coinstar信息亭用<a href="#">现金购买</a></p>
+                            <p>• 在giftcardsy.com上用<a href="#">PayPal</a></p>
+                            <p>• 在 amzcode.nl<a href="#">用Skrill，Paysafecard，iDeal，Paypal 购买</a></p>
+                            <p>• 在中东和北非用<a href="#">CashU</a></p>
+                            <p>• 在premium2me.com<a href="#">用Egopay，Perfect Money，Onecard，Dixiepay，OkPay购买 </a></p>
+                            <p>• 在<a href="#">plati.ru </a>网站购买</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="footerBox mainConBox">
+    <p>已登录账号:<span >12345ffg@gmail.com</span></p>
+</div>
+<div class="backTop-box">
+    <div class="backToTop"></div>
+</div>
+</body>
+</html>

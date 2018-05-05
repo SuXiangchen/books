@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 768px)" href="css/tinyScreen.css" />  <!--屏幕小于400px时 加载tinyScreen。css-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-device-width: 992px)" href="css/smallScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px) and (max-device-width: 1200px)" href="css/middleScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1200px)"href="css/bigScreen.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="mianNav-wrap">
+    <div class="mainConBox main-navBox ">
+        <!--大屏状态下-->
+        <nav class="navbar  hidden-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand " href="#"  >首页</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">查找图书</a></li>
+                    <li><a href="#">最新上架</a></li>
+                    <li><a href="#">会员中心</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">需求登记</a></li>
+                    <li><a href="#">购物车</a></li>
+                    <li><a href="#">充值(余额)</a></li>
+                    <li><a href="javascript:void(0)">退出</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--小屏状态下-->
+        <nav class="navbar visible-xs navbar-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="right-button">
+                        <button type="button"  class=" btn-menu  navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="menu-right"></span>
+                        </button>
+                    </div>
+                    <a class="navbar-brand" href="#" >首页</a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">查找图书</a></li>
+                        <li><a href="#">最新上架</a></li>
+                        <li><a href="#">会员中心</a></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">需求登记</a></li>
+                        <li><a href="#">购物车</a></li>
+                        <li><a href="#">充值(余额)</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class=" mainConBox">
+    <div class="margin-header visible-xs"></div>
+    <div class="main-content-box margin-sm">
+        <div class="text-well-box">
+            <div class="well marginlr-xs well-bg-yellow">
+                <p><strong>新成员如何使用Amazon.com礼品卡充值自己的帐户</strong></p>
+            </div>
+        </div>
+        <div class="col-padding-sm marginlr-xs">
+                        <div class="need-register-box marginlr-xs text-section-con">
+                            <div class="text-section2">
+                                <p><strong>步骤1.</strong>前往amazon.com并登录您的亚马逊账户：</p>
+                                <p>请注意：<br/>
+                                    &nbsp;&nbsp;• 如果您的帐户是与amazon.co.UK或amazon.DE或amazon.IT等等，您可以用原有账号登录amazon.COM :)，这是他们的网站的美国版本。<br/>
+                                    &nbsp;&nbsp;• 如果您没有amazon.com帐户，只需花一分钟创建一个新帐户。
+                                </p>
+                                <img src="images/amazon1.png" class="pic">
+                                <img src="images/amazon2.png" class="pic">
+                                <p><strong>步骤2.</strong><a href="#">点击这里前往amazon.com电子礼品卡页面。 </a> </p>
+                                <p>请注意：<br/>
+                                    &nbsp;&nbsp;• 填入您自己的电子邮件地址，以便礼品卡通过电子邮件发送给自己，而不是其他人。<br/>
+                                    &nbsp;&nbsp;• 选择任意金额，如果你从来没有充值过，我们建议先买 $ 1 。
+                                </p>
+                                <img src="images/amazon3.png" class="pic">
+                                <p><strong>步骤3.</strong>使用借记卡/信用卡支付您的礼品卡。  </p>
+                                <p>请注意：<br/>
+                                    &nbsp;&nbsp;• 确保您的帐单地址是正确的，如果他们怀疑使用欺诈性卡，亚马逊将取消订单。
+                                </p>
+                                <img src="images/amazon4.png" class="pic">
+                                <img src="images/amazon5.png" class="pic">
+                                <p><strong>步骤4.</strong>从amazon.com收到的电子邮件中复制礼品卡代码。 </p>
+                                <p>请注意：<br/>
+                                    &nbsp;&nbsp;• 不要兑换代码！或点击赎回按钮，因为它会使您的礼品卡无用...<br/>
+                                    &nbsp;&nbsp;• 只需将声明代码复制到剪贴板<br/>
+                                    &nbsp;&nbsp;• 这可能需要几分钟到几个小时，具体取决于您的亚马逊账户。<br/>
+                                    &nbsp;&nbsp;•您将首先收到收据电子邮件，然后一旦批准您的订单，您将收到另一封电子邮件，其中包含您的礼品卡充值代码。 <br/>
+                                </p>
+                                <img src="images/amazon6.png" class="pic">
+                                <p><strong>步骤5.</strong>将礼品卡代码粘贴到<a href="#">本站上的亚马逊礼品卡充值页右侧的表格中 </a>  </p>
+                                <p>请注意：<br/>
+                                    &nbsp;&nbsp;• 如果您使用移动设备或平板电脑，则表单可能位于页面底部。</br>
+                                    &nbsp;&nbsp;• 再次说明---不要自己兑换礼品卡</br>
+                                    &nbsp;&nbsp;• 您的帐户充值可能需要几个小时的时间，请耐心等待。超过24小时尚未充值上，可以联系客服支持。</br>
+                                </p>
+                                <img src="images/amazon7.png" class="pic">
+                            </div>
+                        </div>
+        </div>
+    </div>
+</div>
+<div class="backTop-box">
+    <div class="backToTop"></div>
+</div>
+</body>
+</html>

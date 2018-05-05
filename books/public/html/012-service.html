@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 768px)" href="css/tinyScreen.css" />  <!--屏幕小于400px时 加载tinyScreen。css-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-device-width: 992px)" href="css/smallScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px) and (max-device-width: 1200px)" href="css/middleScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1200px)"href="css/bigScreen.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="mianNav-wrap">
+    <div class="mainConBox main-navBox ">
+        <!--大屏状态下-->
+        <nav class="navbar  hidden-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand " href="#"  >首页</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">查找图书</a></li>
+                    <li><a href="#">最新上架</a></li>
+                    <li><a href="#">会员中心</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">需求登记</a></li>
+                    <li><a href="#">购物车</a></li>
+                    <li><a href="#">充值(余额)</a></li>
+                    <li><a href="javascript:void(0)">退出</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--小屏状态下-->
+        <nav class="navbar visible-xs navbar-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="right-button">
+                        <button type="button"  class=" btn-menu  navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="menu-right"></span>
+                        </button>
+                    </div>
+                    <a class="navbar-brand" href="#" >首页</a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">查找图书</a></li>
+                        <li><a href="#">最新上架</a></li>
+                        <li><a href="#">会员中心</a></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">需求登记</a></li>
+                        <li><a href="#">购物车</a></li>
+                        <li><a href="#">充值(余额)</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class=" mainConBox">
+    <div class="margin-header visible-xs"></div>
+    <div class="main-content-box margin-sm">
+        <div class="text-well-box">
+            <div class="well marginlr-xs well-bg-green"><strong>您所有与服务支持相关的信息，都按照时间顺序显示在本页面上。</strong></div>
+        </div>
+        <div class="lines-box-l margin-bot"></div>
+        <div class="col-padding-no  ">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="text-well-box">
+                            <div class="well well-bg-orange2 marginlr-xs"><strong>请不要在本“服务支持”页面放置“需求登记”。需要书籍等请使用“需求登记”功能。忽略此通知将可能导致您的帐户被删除。</strong></div>
+                         </div>
+                        <div class="thumbnail gray-bg marginlr-xs">
+                             <form role="form">
+                                 <div class="form-group" style="margin-bottom:5px;">
+                                     <!--<label for="name"></label>-->
+                                     <textarea class="form-control" rows="8" style="letter-spacing: 1.5px;"></textarea>
+                                 </div>
+                             </form>
+                             <button type="button" class="btn btn-orange blue-bg w-czk service-btn">发送消息获取支持</button>
+                         </div>
+                        <div class="lines-box-l"></div>
+                        <div class="hot-topic-box marginlr-xs service-panel">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading "  style="background: #75a13b; color:#fff;">
+                                    <p class="header-left fl">管理员服务支持回复：</p>
+                                    <div class="header-right fr">
+                                        1分钟之前
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <p>管理员服务支持回复的内容  管理员服务支持回复的内容   管理员服务支持回复的内容</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hot-topic-box marginlr-xs service-panel">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading " style="background: #2a92df;color:#fff;">
+                                    <p class="header-left fl">我的服务支持请求：：</p>
+                                    <div class="header-right fr">
+                                        2小时之前
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <p>会员请求服务支持发送的内容  会员请求服务支持发送的内容   会员请求服务支持发送的内容</p>
+                                    <p>会员请求服务支持发送的内容  会员请求服务支持发送的内容   会员请求服务支持发送的内容</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="hot-topic-box marginlr-xs service-panel" style="margin-top:0">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading" style="background: #e5e5e5;">
+                                    <p class="header-left fl">其他联系方式</p>
+                                </div>
+                                <div class="panel-body">
+                                    <p>请注意以下这些联系方式，以防网站意外关闭或无法访问：</p>
+                                    <p>电子邮件: <a href="javascript:void(0)">3267ffd@163.com</a> </p>
+                                    <p>QQ: <a href="javascript:void(0)">36724258</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</div>
+<div class="footerBox mainConBox">
+    <p>已登录账号:<span >12345ffg@gmail.com</span></p>
+</div>
+<div class="backTop-box">
+    <div class="backToTop"></div>
+</div>
+</body>
+</html>

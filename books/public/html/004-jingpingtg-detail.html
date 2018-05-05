@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 768px)" href="css/tinyScreen.css" />  <!--屏幕小于400px时 加载tinyScreen。css-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-device-width: 992px)" href="css/smallScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px) and (max-device-width: 1200px)" href="css/middleScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1200px)"href="css/bigScreen.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="mianNav-wrap">
+    <div class="mainConBox main-navBox ">
+        <!--大屏状态下-->
+        <nav class="navbar  hidden-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand " href="#"  >首页</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">查找图书</a></li>
+                    <li><a href="#">最新上架</a></li>
+                    <li><a href="#">会员中心</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">需求登记</a></li>
+                    <li><a href="#">购物车</a></li>
+                    <li><a href="#">充值(余额)</a></li>
+                    <li><a href="javascript:void(0)">退出</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--小屏状态下-->
+        <nav class="navbar visible-xs navbar-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="right-button">
+                        <button type="button"  class=" btn-menu  navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="menu-right"></span>
+                        </button>
+                    </div>
+                    <a class="navbar-brand" href="#" >首页</a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">查找图书</a></li>
+                        <li><a href="#">最新上架</a></li>
+                        <li><a href="#">会员中心</a></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">需求登记</a></li>
+                        <li><a href="#">购物车</a></li>
+                        <li><a href="#">充值(余额)</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class=" mainConBox">
+    <div class="margin-header visible-xs"></div>
+    <div class="searchBoxwrap searchBox  searchBox-xs" id="search-scroll">
+        <form class="navbar-form " role="search">
+            <div class="form-group">
+                <input type="text" class="form-control search-input" placeholder="请输入关键字">
+            </div>
+            <button type="submit" class="btn btn-green hidden-xs" ><span class="search-icon"></span>搜索</button>
+            <button type="submit" class="btn visible-xs" ><span class="search-icon"></span></button>
+        </form>
+        <div class="hot-search">
+            <p>搜索：</p>
+            <div class="search-label">
+                <label class="checkbox-inline">
+                    <input type="radio" name="optionsRadiosinline"  value="option1" checked><span>全部字段</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="radio" name="optionsRadiosinline"  value="option2"><span>书名</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="radio" name="optionsRadiosinline"  value="option1"><span>作者</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="radio" name="optionsRadiosinline"  value="option2"><span class="english-top">ISBN</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="radio" name="optionsRadiosinline"  value="option2"><span class="english-top">ASIN</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="lines-box-l hidden-xs"></div>
+    <div class="lines-box visible-xs"></div>
+    <div class="detail-main-box">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 detail-main-con ">
+                <div class="thumbnail pic-thum-fixed">
+                    <div class="tuangou-icon  tg-ing"></div>
+                    <img src="images/1.jpg" alt="通用的占位符缩略图" class="img-responsive">
+                </div>
+                <div class=" authors ">
+                    Goddesses, Whores, Wives, and Slaves: Women in Classical Antiquity
+                </div>
+                <div class="author-box ">
+                    <p class="fl fl-w"><strong class="author">by</strong></p><p class="fl fr-w"><span class="author little-word text-wrap"> W. Bruce Cameron</span></p>
+                </div>
+                <div class="gs margin-bot green-bg"> EPUB</div><!--blue-bg：MOBI PDF  ，red-bg： MOBI PDF ，orange-bg ：AZW3 -->
+            </div>
+            <div class="lines-box visible-xs"></div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 detail-main-con">
+                <div class="thumbnail gray-bg pl-list-box ">
+                    <div class="">
+                        <ul class="list-group">
+                            <li><strong class="mc">第1位:</strong><strong class="red">￥ 158.00</strong><a href="javascript:viod(0)" class="btn btn-default">已被购买</a></li>
+                            <li><strong class="mc">第2位:</strong><strong class="red">￥ 158.00</strong><a href="javascript:viod(0)" class="btn">立即购买</a></li>
+                            <li><strong class="mc">第3位:</strong><strong class="red">￥ 158.00</strong><a href="javascript:viod(0)" class="btn">立即购买</a></li>
+                            <li><strong class="mc">第4位:</strong><strong class="red">￥ 158.00</strong><a href="javascript:viod(0)" class="btn">立即购买</a></li>
+                            <li><strong class="mc">第5位:</strong><strong class="red">￥ 158.00</strong><a href="javascript:viod(0)" class="btn">立即购买</a></li>
+                            <li><strong class="mc">第6位:</strong><strong class="red">￥ 158.00</strong><a href="javascript:viod(0)" class="btn">立即购买</a></li>
+                            <li><strong class="mc">第7位:</strong><strong class="red">￥ 158.00</strong><a href="javascript:viod(0)" class="btn">立即购买</a></li>
+                            <li><strong class="mc">第8位:</strong><strong class="red">￥ 158.00</strong><a href="javascript:viod(0)" class="btn">立即购买</a></li>
+                            <li><strong class="mc">第9位:</strong><strong class="red">￥ 158.00</strong><a href="javascript:viod(0)" class="btn">立即购买</a></li>
+                            <li><strong class="mc">第10位:</strong><strong class="red">￥ 158.00</strong><a href="javascript:viod(0)" class="btn">立即购买</a></li>
+                            <li><strong class="mc">现货:</strong><strong class="red">￥ 158.00</strong><a href="javascript:viod(0)" class="btn">立即购买</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="lines-box visible-xs"></div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 detail-main-con">
+                <div class="thumbnail cp-intro border">
+                   <h4> 团购说明：</h4>
+                   <p> 1. 本团购主要是针对很难弄到的书，给大家提供一个一起优惠购买的平台。</p>
+                   <p> 2. 本站团购为阶梯定价方式，愈早购买的同学愈优惠。以成功支付时间为准。</p>
+                   <p> 3. 团购时间一般为1-10天。</p>
+                   <p> 4. 团购图书交付的日期一般为团购结束后1-5天。</p>
+                   <p> 5. 参加团购的同学如果已经符合代言人标准，可以同时<a href="#" >申请代言人</a>资格，获得代言人收益。</p>
+                   <p> 6. 如果团购人数达不到最少人数，管理员将原路退回会员所付款项。</p>
+                </div>
+                <div class="thumbnail intro text-section3 spcs-show border">
+                    <p><strong>• ISBN: </strong>9781907722661</p>
+                    <p><strong>• File Size: </strong> 948 KB</p>
+                    <p><strong>• Print Length:</strong> 178 pages</p>
+                    <p><strong>• Publisher:</strong>Ecademy Press Ltd (October 5 2011)</p>
+                    <p><strong>• Publication Date: </strong>October 5 2011</p>
+                    <p><strong>• Language:</strong> English</p>
+                    <p><strong>•  ASIN:</strong> B006T37TNS</p>
+                </div>
+            </div>
+            <div class="col-sm-6 detail-main-con spcs-hide">
+                <div class="thumbnail intro text-section3">
+                    <p><strong>• ISBN: </strong>9781907722661</p>
+                    <p><strong>• File Size: </strong> 948 KB</p>
+                    <p><strong>• Print Length:</strong> 178 pages</p>
+                    <p><strong>• Publisher:</strong>Ecademy Press Ltd (October 5 2011)</p>
+                    <p><strong>• Publication Date: </strong>October 5 2011</p>
+                    <p><strong>• Language:</strong> English</p>
+                    <p><strong>•  ASIN:</strong> B006T37TNS</p>
+                </div>
+            </div>
+        </div>
+        <div class="lines-box visible-xs"></div>
+        <div class="row ">
+            <div class="panel panel-default cp-intro marginlr-xs">
+                <div class="panel-heading ">内容简介</div>
+                <div class="panel-body text-section2">
+                    <div class="summary" >
+                        <p>No matter where you are on the organizational ladder the odds are high that you've delivered a high-stakes presentation to your peers your boss your customers or the general public. Presentation software is one of the few tools that requires professionals to think visually on an almost daily basis. But unlike verbal skills effective visual expression is not easy natural or actively taught in schools or business training programs. slide:ology fills that void.</p>
+                    </div>
+                    <div class="detail" >
+                        <p>No matter where you are on the organizational ladder the odds are high that you've delivered a high-stakes presentation to your peers your boss your customers or the general public. Presentation software is one of the few tools that requires professionals to think visually on an almost daily basis. But unlike verbal skills effective visual expression is not easy natural or actively taught in schools or business training programs. slide:ology fills that void.</p>
+                        <p>Written by Nancy Duarte President and CEO of Duarte Design the firm that created the presentation for Al Gore's Oscar-winning film An Inconvenient Truth this book is full of practical approaches to visual story development that can be applied by anyone. The book combines conceptual thinking and inspirational design with insightful case studies from the world's leading brands. With slide:ology you'll learn to:</p>
+                        <p> Millions of presentations and billions of slides have been produced -- and most of them miss the mark. slide:ology will challenge your traditional approach to creating slides by teaching you how to be a visual thinker. And it will help your career by creating momentum for your cause. </p>
+                    </div>
+                    <span class="click-add">查看更多</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lines-box visible-xs"></div>
+    <div class=" problem-tj-box marginlr-xs">
+        <div class="form">
+            <form class="form-inline" role="form">
+                <div class="left">发现这个页面有问题？</div>
+                <div class="form-group">
+                    <label class="sr-only" for="name">名称</label>
+                    <input type="text" class="form-control" id="name"
+                           placeholder="">
+                </div>
+                <button type="submit" class="btn btn-default">发送</button>
+            </form>
+        </div>
+    </div>
+    <div class="lines-box-l"></div>
+</div>
+
+<div class="footerBox mainConBox">
+    <p>已登录账号:<span >12345ffg@gmail.com</span></p>
+</div>
+<div class="backTop-box">
+    <div class="backToTop"></div>
+</div>
+</body>
+</html>

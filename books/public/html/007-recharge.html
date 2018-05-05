@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 768px)" href="css/tinyScreen.css" />  <!--屏幕小于400px时 加载tinyScreen。css-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-device-width: 992px)" href="css/smallScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px) and (max-device-width: 1200px)" href="css/middleScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1200px)"href="css/bigScreen.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="mianNav-wrap">
+    <div class="mainConBox main-navBox ">
+        <!--大屏状态下-->
+        <nav class="navbar  hidden-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand " href="#"  >首页</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">查找图书</a></li>
+                    <li><a href="#">最新上架</a></li>
+                    <li><a href="#">会员中心</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">需求登记</a></li>
+                    <li><a href="#">购物车</a></li>
+                    <li><a href="#">充值(余额)</a></li>
+                    <li><a href="javascript:void(0)">退出</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--小屏状态下-->
+        <nav class="navbar visible-xs navbar-xs" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="right-button">
+                        <button type="button"  class=" btn-menu  navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="menu-right"></span>
+                        </button>
+                    </div>
+                    <a class="navbar-brand" href="#" >首页</a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">查找图书</a></li>
+                        <li><a href="#">最新上架</a></li>
+                        <li><a href="#">会员中心</a></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">需求登记</a></li>
+                        <li><a href="#">购物车</a></li>
+                        <li><a href="#">充值(余额)</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class=" mainConBox">
+    <div class="margin-header visible-xs"></div>
+    <div class="main-content-box margin-sm">
+        <div class="main-conten-top margin-bot">
+            <h2 class="lg-header" style="font-weight: normal">余额充值</h2>
+        </div>
+        <div class="well well-sm well-ye marginlr-xs"><strong>您的余额：</strong><span>￥59.36</span></div>
+        <div class="recharge-box marginlr-xs">
+                <div class="row ">
+                    <div class="col-xs-12 col-sm-6 recharge-box-con margin-bot2">
+                        <div class="thumbnail">
+                            <div class="cz-con-xz navToggle-title">
+                                <p class="select-cz cz-zfb list-l fl cur">通过支付宝充值</p>
+                                <p class="select-cz cz-wx list-l fr">通过微信充值</p>
+                            </div>
+                            <div class="cz-con navToggle-con" >
+                                <div class="item item1 zfb" >
+                                    <p class="title"><strong>支付宝扫码支付</strong></p>
+                                    <img src="" class="code">
+                                    <p><strong>收款账号：123343000@qq.com</strong></p>
+                                </div>
+                                <div class="item item2 wx">
+                                    <p class="title"><strong>微信扫码支付</strong></p>
+                                    <img src="" class="code">
+                                    <p><strong>收款账号：120000000000@qq.com</strong></p>
+                                </div>
+                            </div>
+                            <div class="lines-box-l"></div>
+                            <div class="cz-con-qr">
+                                    <div class="form-group">
+                                        <label for="firstname" class="col-xs-4 col-sm-4 col-md-3 control-label">充值方式：</label>
+                                        <div class="col-xs-8 col-sm-8 col-md-9">
+                                            <label class="checkbox-inline">
+                                                <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>支付宝充值
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="radio" name="optionsRadiosinline" id="optionsRadios4" value="option2">微信充值
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="firstname" class="col-xs-4 col-sm-4 col-md-3 control-label">充值金额：</label>
+                                        <div class="col-xs-8 col-sm-8 col-md-9 ">
+                                            <!--<input type="text" class="form-control" id="firstname" placeholder="请输入名字">-->
+                                                <label for="name" class="form-select-left">￥</label>
+                                                <select class="form-control fl" style="width: 80%;">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group sc-pic">
+                                        <label for="firstname" class="col-xs-4 col-sm-4 col-md-3 control-label">截图上传：</label>
+                                        <div class=" col-xs-8 col-sm-8 col-md-9">
+                                            <div class="">
+                                                <!--<img src="images/sc-pic-add.png">-->
+                                                <p class="" style="margin-top:4px;"><input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" class="input-file"></p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="firstname" class="col-xs-4 col-sm-4 col-md-3 control-label"></label>
+                                        <div class=" col-xs-8 col-sm-8 col-md-9">
+                                            <button type="button" class="btn btn-orange red-bg">确认提交</button>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <!--<button type="button" class="btn btn-orange orange-bg w-czk margin-bot visible-xs">通过美国亚马逊礼品卡充值</button>-->
+                     </div>
+                    <div class="col-xs-12 col-sm-6 margin-bot">
+                        <div class="need-register-box marginlr-xs text-section-con">
+                            <h3 style="font-size: 15px;color:#585859;">支付宝和微信支付充值说明：</h3>
+                            <div class="text-section">
+                                <p>1.扫描二维码付款：点击上面的“支付宝支付”或“微信支付”按键，扫描下方二维码，填入金额转账付款。</p>
+                            </div>
+                            <div class="text-section">
+                                <p>2.提交手机付款截图，和支付金额。</p>
+                            </div>
+                            <div class="text-section">
+                                <p>3.等待系统充值完成，10小时内（平均2小时）。</p>
+                            </div>
+                        </div>
+                        <!--<p class="ymx-cz-ts visible-xs">$1=￥6.5，24小时内完成充值（平均2小时）</p>-->
+                    </div>
+                </div>
+            <div class="lines-box-l hidden-xs margin-bot"></div>
+            <div class="lines-box visible-xs margin-bot"></div>
+            <div class="row " style="margin-top:40px;">
+                <div class="col-xs-12 col-sm-6 recharge-box-con"  >
+                    <button type="button" class="btn btn-orange orange-bg w-czk margin-bot">通过美国亚马逊礼品卡充值</button>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <p class="ymx-cz-ts margin-bot">$1=￥6.5，24小时内完成充值（平均2小时）</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="footerBox mainConBox">
+    <p>已登录账号:<span >12345ffg@gmail.com</span></p>
+</div>
+<div class="backTop-box">
+    <div class="backToTop"></div>
+</div>
+</body>
+</html>
